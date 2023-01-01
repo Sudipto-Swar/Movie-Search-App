@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Peralta&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Peralta', cursive;
+}
+
+body{
+    background-color: rgb(56, 45, 125);
+}
+
+#container{
+    
+    width: 100%;
+    min-height: 100vh;
+}
+
+#search-box{
+    margin: 5px;
+    padding: 5px;
+    background-color: none;
+    text-align: center;
+}
+
+#search{
+    padding: 2px;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: none;
+    autofocus : off;
+}
+
+#search:focus{
+    background: aliceblue;
+}
+
+#row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.movie-box{
+    width: 25%;
+    height: 400px;
+    overflow: hidden;
+    padding: 5px; 
+}
+
+.movie-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-box .info{
+    min-height: auto;
+    max-height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom:-100%;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+.movie-box .info{
+    height: auto;
+    width: 100%;
+    position:relative;
+    bottom:-100%;
+    padding: 5px;
+    background-color: aliceblue;
+    border-radius: 10px 10px 0px 0px;
+    text-align: justify;
+}
+
+.movie-box:hover .info{
+    margin-bottom: 10px;
+    height: 100%;
+    bottom: 100%;
+}
+
+.movie-box h2{
+    color: rgb(56, 45, 125);
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.movie-box span{
+    color: rgb(234, 1, 1);
+    font-size: 24px;
+    position: absolute;
+    right: 5%;
+}
+
+#title p{
+    color: rgb(56, 45, 125);
+    font-weight: bolder;
+    font-size: 20px;
+}
